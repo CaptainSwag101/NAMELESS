@@ -16,17 +16,16 @@ menu::~menu()
 	y = 0;
 	enabled = false;
 	count = 0;
-	sftd_free_font(font);
 	TXT_SIZE = 0;
 	charvector.clear();
 	selected = 0;
 	hilighted = 1;
+	std::vector<char*>().swap(charvector);
 }
 
 void menu::enable(bool enabl)
 {
 	enabled = enabl;
-
 }
 
 void menu::update()

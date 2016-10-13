@@ -16,7 +16,6 @@ button::~button()
 {
 	x = 0;
 	y = 0;
-	sftd_free_font(font);
 	color = 0;
 	size = 0;
 	text = nullptr;

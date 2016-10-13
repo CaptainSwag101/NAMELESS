@@ -93,7 +93,7 @@ int main()
 		sftd_draw_text(font,TEXT_SIZE * 6, 10, RGBA8( 72,   0, 255, 255), TEXT_SIZE, "S");
 		sftd_draw_text(font,TEXT_SIZE * 7, 10, RGBA8(255,   0, 220, 255), TEXT_SIZE, "S");
 		sftd_draw_text(font,320-(TEXT_SIZE-10)*4, TEXT_SIZE+10, RGBA8(255, 255, 255, 255), TEXT_SIZE-10, "DEMO");
-		if (btnquit.isPressed()) break;
+		if (btnquit.isPressed() || Menu.selected == 4) break;
 
 		sf2d_end_frame();
 
