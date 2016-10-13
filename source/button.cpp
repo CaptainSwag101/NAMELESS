@@ -16,7 +16,7 @@ button::~button()
 {
 	x = 0;
 	y = 0;
-	font = 0;
+	sftd_free_font(font);
 	color = 0;
 	size = 0;
 	text = nullptr;
@@ -29,9 +29,7 @@ void button::update() // WARNING /!\ This has to be called in sf2d_start_frame(G
 
 bool button::isPressed()
 {
-	hidScanInput();
-	held = hidKeysHeld();
-	if (held & KEY_TOUCH) {
+	if (hidKeysHeld() & KEY_TOUCH) {
 		hidTouchRead(&touch);
 		touch_x = touch.px;
 		touch_y = touch.py;

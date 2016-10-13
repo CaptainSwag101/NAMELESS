@@ -18,6 +18,5 @@ public:
 	touchPosition touch;
 	u16 touch_x = 320 / 2;
 	u16 touch_y = 240 / 2;
-	u32 held;
 };
 
