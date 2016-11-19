@@ -4,6 +4,7 @@
 #include <sfil.h>
 #include <vector>
 #include <3ds.h>
+#include "menu_png.h"
 class menu
 {
 private:
@@ -15,7 +16,7 @@ public:
 	void enable(bool enabl);
 	bool enabled = false;
 	void update();
-	sf2d_texture *menutex = sfil_load_PNG_file("sdmc:/NAMELESS/menu/def.png", SF2D_PLACE_RAM);
+	sf2d_texture *menutex = sfil_load_PNG_buffer(menu_png, SF2D_PLACE_RAM);
 	int count;
 	sftd_font *font;
 	int TXT_SIZE;
