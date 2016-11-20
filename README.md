@@ -36,10 +36,10 @@ everything. So the games will be entirely moddable!
 
  You will need [DEVKITPRO](https://devkitpro.org/) installed. You'll then need to install [sf2dlib](https://github.com/xerpi/sf2dlib)
  , [sfillib](https://github.com/xerpi/sfillib) and [sftdlib](https://github.com/xerpi/sftdlib). Make sure you have everything insatlled, and then run the command  
- `make`
+ `make`  
  If your 3DS is connected to the internet, you can also edit Makefile to make it match with your 3DS's IP, then open FBI, go to
- "Network installation", and then on your PC run the command
- `make spunch`
+ "Network installation", and then on your PC run the command  
+ `make spunch`  
  The CIA will magically be installed on your 3DS! Make sure you have Java installed to run this command. You will also need a
  "NAMELESS" folder at the root of your SD card that contains the data needed.
 
